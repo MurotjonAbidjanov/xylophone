@@ -44,9 +44,8 @@ class _XylophoneState extends State<Xylophone> {
 
   Expanded tapped(Color? color, int? san) {
     return Expanded(
-      child: GestureDetector(
+      child: InkWell(
           onTap: () {
-
             AssetsAudioPlayer.newPlayer().open(
               Audio("assets/assets_note$san.wav"),
               autoStart: true,
